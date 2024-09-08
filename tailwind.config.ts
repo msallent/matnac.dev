@@ -4,6 +4,9 @@ const config: Config = {
   content: ["./src/app/**/*.tsx", "./src/components/**/*.tsx"],
   theme: {
     extend: {
+      backgroundImage: {
+        grain: "url('/bg-grain.png')",
+      },
       colors: {
         primary: "rgb(var(--color-primary))",
         secondary: "rgb(var(--color-primary) / 0.4)",
