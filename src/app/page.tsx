@@ -1,9 +1,10 @@
-import { Hero } from "@/components";
+import { Hero, Who } from "@/components";
 
 export default function Home() {
   return (
-    <main className="font-primary text-primary">
+    <main className="flex flex-col gap-16 font-primary uppercase text-primary">
       <Hero />
+      <Who />
     </main>
   );
 }
