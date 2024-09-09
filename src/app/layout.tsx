@@ -42,7 +42,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${instrumentSans.variable} ${spaceGrotesk.variable}`}>
-      <body className="bg-grain bg-background bg-no-repeat bg-blend-hard-light">{children}</body>
+      <body className="bg-grain bg-background bg-blend-hard-light">{children}</body>
     </html>
   );
 }
