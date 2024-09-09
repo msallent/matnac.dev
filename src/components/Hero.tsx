@@ -3,7 +3,7 @@ import { Matnac, Plus } from "@/icons";
 export function Hero() {
   return (
     <section className="flex h-svh flex-col justify-between p-5">
-      <div className="flex flex-col gap-8 font-secondary text-xs">
+      <div className="flex flex-1 flex-col gap-8 font-secondary text-xs">
         <div className="flex justify-between">
           <div className="flex flex-1 gap-8">
             <span>
@@ -26,7 +26,7 @@ export function Hero() {
 
         <div className="flex justify-between">
           <span className="leading-[1.4]">
-            <p>2xF9D3</p>
+            <p className="normal-case">2xF9D3</p>
             <p>{`//_`}</p>
           </span>
         </div>
@@ -34,23 +34,23 @@ export function Hero() {
 
       <Matnac role="img" aria-labelledby="title" />
 
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-1 flex-col justify-end gap-4">
         <Plus aria-hidden className="mx-auto h-10 w-10" />
 
         <div className="flex justify-between font-secondary text-sm">
-          <span className="text-left">
-            <p>SCROLL</p>
-            <p>DOWN</p>
+          <span>
+            <p>Scroll</p>
+            <p>Down</p>
           </span>
 
           <span className="text-center">
-            <p>SCROLL</p>
-            <p>DOWN</p>
+            <p>Scroll</p>
+            <p>Down</p>
           </span>
 
           <span className="text-right">
-            <p>SCROLL</p>
-            <p>DOWN</p>
+            <p>Scroll</p>
+            <p>Down</p>
           </span>
         </div>
       </div>
