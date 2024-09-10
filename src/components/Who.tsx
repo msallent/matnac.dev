@@ -23,6 +23,7 @@ export function Who() {
             <p>=</p>
             <p>0x9FDC</p>
           </span>
+
           <p className="text-sm">mqsallent@gmail.com</p>
         </span>
 
