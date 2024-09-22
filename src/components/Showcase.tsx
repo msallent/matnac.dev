@@ -18,14 +18,14 @@ export function Showcase() {
       </div>
 
       <div className="flex flex-col items-center pt-11">
-        <span className="flex flex-col items-center gap-1">
+        <h1 className="flex flex-col items-center gap-1">
           <span className="relative w-fit">
             <p className="text-lg">(03)</p>
             <Stars className="absolute -right-[70%] bottom-1/2 w-12" />
           </span>
 
           <p className="text-xl">Showcase</p>
-        </span>
+        </h1>
 
         <div className="relative">
           <a href="https://casayen.com" target="_blank" rel="noreferrer">
