@@ -24,7 +24,7 @@ export function Who() {
             <p>0x9FDC</p>
           </span>
 
-          <p className="text-sm">mqsallent@gmail.com</p>
+          <p className="text-sm">matias@matnac.dev</p>
         </span>
 
         <span className="flex justify-between font-secondary text-xs">

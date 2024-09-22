@@ -3,7 +3,7 @@ const SKILLS = ["React", "TypeScript", "Next.js", "Node.js", "Tailwind"];
 export function Dev() {
   return (
     <section className="flex h-svh flex-col justify-between p-5">
-      <p className="text-right font-secondary text-sm">mqsallent@gmail.com</p>
+      <p className="text-right font-secondary text-sm">matias@matnac.dev</p>
 
       <p className="text-right font-secondary text-sm text-secondary">Languages / Skills</p>
 
