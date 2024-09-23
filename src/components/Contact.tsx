@@ -4,7 +4,7 @@ export function Contact() {
   return (
     <section className="flex h-svh flex-col justify-between p-5">
       <h1 className="flex justify-end text-secondary">
-        <span className="mt-[2.5px] text-lg">(04)</span>
+        <span className="mt-[2.5px] text-lg">(05)</span>
         <span className="text-xl">Contact</span>
       </h1>
 
