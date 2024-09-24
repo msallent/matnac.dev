@@ -2,7 +2,7 @@ import { Clock, Pin } from "@/icons";
 
 export function Who() {
   return (
-    <section className="flex h-svh flex-col justify-between p-5">
+    <section className="section">
       <div className="flex flex-1 justify-between">
         <p className="font-secondary text-xs">00101</p>
 

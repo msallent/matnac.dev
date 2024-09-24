@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .section {
+    @apply flex h-svh flex-col justify-between p-5 sm:p-8;
+  }
+}
+
 :root {
   --color-primary: 229 229 217;
   --color-background: 28 28 28;

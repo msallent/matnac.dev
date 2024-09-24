@@ -3,7 +3,7 @@ import { Arrow, Stars } from "@/icons";
 
 export function Showcase() {
   return (
-    <section className="flex h-svh flex-col justify-between p-5">
+    <section className="section">
       <div className="flex justify-between font-secondary text-xs">
         <div className="flex flex-1 gap-8">
           <span>
