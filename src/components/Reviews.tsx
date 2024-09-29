@@ -43,7 +43,7 @@ export function Reviews() {
     <section className="section">
       <h1 className="flex justify-end">
         <span className="mt-[2.5px] text-lg">(04)</span>
-        <span className="text-xl">Reviews</span>
+        <span className="text-2xl">Reviews</span>
       </h1>
 
       <div className="flex flex-col font-secondary text-sm">

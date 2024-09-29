@@ -8,11 +8,11 @@ export function Who() {
 
         <h1 className="flex justify-end text-secondary">
           <span className="mt-[2.5px] text-lg">(01)</span>
-          <span className="text-xl">Who</span>
+          <span className="text-2xl">Who</span>
         </h1>
       </div>
 
-      <span className="flex flex-col text-xl">
+      <span className="flex flex-col text-2xl">
         <p>Matias Sallent</p>
         <p className="text-right">(Tech Lead Engineer)</p>
       </span>
@@ -37,7 +37,7 @@ export function Who() {
             Buenos Aires, 7:34 (GMT-3) <Clock aria-hidden className="mt-px h-3 w-3" />
           </p>
 
-          <p className="flex items-baseline justify-end gap-1 text-xl">
+          <p className="flex items-baseline justify-end gap-1 text-2xl">
             <Pin aria-hidden className="h-auto w-7" /> Argentina
           </p>
         </div>

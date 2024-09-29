@@ -5,7 +5,7 @@ export function Contact() {
     <section className="section">
       <h1 className="flex justify-end text-secondary">
         <span className="mt-[2.5px] text-lg">(05)</span>
-        <span className="text-xl">Contact</span>
+        <span className="text-2xl">Contact</span>
       </h1>
 
       <div className="flex items-center justify-between">
@@ -46,7 +46,7 @@ export function Contact() {
           </div>
         </div>
 
-        <span className="!text-[3rem] text-xl">
+        <span className="text-xl">
           <p>matias</p>
           <p>@matnac.dev</p>
         </span>

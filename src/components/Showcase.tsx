@@ -24,7 +24,7 @@ export function Showcase() {
             <Stars aria-hidden className="absolute -right-[70%] bottom-1/2 w-12" />
           </span>
 
-          <p className="text-xl">Showcase</p>
+          <p className="text-2xl">Showcase</p>
         </h1>
 
         <div className="relative">
@@ -42,7 +42,7 @@ export function Showcase() {
           <Arrow aria-hidden className="absolute -right-4 top-1/2 h-9 w-9 -translate-y-1/2" />
         </div>
 
-        <span className="text-center text-xl">
+        <span className="text-center text-2xl">
           <p>CasaYen</p>
           <p>.com</p>
         </span>
