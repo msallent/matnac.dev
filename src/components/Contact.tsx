@@ -40,6 +40,10 @@ export function Contact() {
           <p>matias</p>
           <p>@matnac.dev</p>
         </span>
+
+        <p className="mt-[1.125rem] text-center font-secondary text-xs">
+          Matnac LLC, 8 the Green STE B, Dover, DE 19901
+        </p>
       </div>
     </section>
   );
