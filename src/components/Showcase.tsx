@@ -21,7 +21,7 @@ export function Showcase() {
         <h1 className="flex flex-col items-center gap-1">
           <span className="relative w-fit">
             <p className="text-lg">(03)</p>
-            <Stars className="absolute -right-[70%] bottom-1/2 w-12" />
+            <Stars aria-hidden className="absolute -right-[70%] bottom-1/2 w-12" />
           </span>
 
           <p className="text-xl">Showcase</p>
@@ -39,7 +39,7 @@ export function Showcase() {
             />
           </a>
 
-          <Arrow className="absolute -right-4 top-1/2 h-9 w-9 -translate-y-1/2" />
+          <Arrow aria-hidden className="absolute -right-4 top-1/2 h-9 w-9 -translate-y-1/2" />
         </div>
 
         <span className="text-center text-xl">

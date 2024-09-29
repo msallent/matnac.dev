@@ -12,11 +12,21 @@ export function Contact() {
         <p className="font-secondary text-sm">Drop me a line</p>
 
         <span className="flex gap-4">
-          <a href="https://github.com/msallent" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/msallent"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Matias' GitHub profile"
+          >
             <GitHub className="h-7 w-7" />
           </a>
 
-          <a href="https://www.linkedin.com/in/matias-sallent" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/matias-sallent"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Matias' LinkedIn profile"
+          >
             <LinkedIn className="h-7 w-7" />
           </a>
         </span>
