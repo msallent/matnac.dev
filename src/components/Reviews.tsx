@@ -50,7 +50,7 @@ export function Reviews() {
         <Carousel>
           {REVIEWS.map((review, index) => (
             <CarouselItem key={index}>
-              <div className="flex h-60 flex-col justify-end gap-2 border-r border-secondary">
+              <div className="flex h-60 flex-col justify-end gap-2">
                 <p>{review.author}</p>
                 <p className="text-secondary">{review.position}</p>
                 <p className="text-base normal-case">{review.message}</p>

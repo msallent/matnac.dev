@@ -8,7 +8,7 @@ type CarouselProps = {
 };
 
 export function Carousel({ children }: CarouselProps) {
-  const [carouselRef, embla] = useEmblaCarousel({ loop: true });
+  const [carouselRef, embla] = useEmblaCarousel({ loop: true, align: "start" });
 
   const scrollPrev = useCallback(() => {
     embla?.scrollPrev();
@@ -64,7 +64,7 @@ export function CarouselItem({ children }: CarouselItemProps) {
     <div
       role="group"
       aria-roledescription="slide"
-      className="min-w-0 shrink-0 grow-0 basis-full pl-4"
+      className="min-w-0 shrink-0 grow-0 basis-full border-r border-secondary px-4"
     >
       {children}
     </div>
