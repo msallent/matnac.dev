@@ -9,7 +9,7 @@
 
 @layer components {
   .section {
-    @apply flex h-svh flex-col justify-between p-5;
+    @apply flex h-svh shrink-0 snap-center flex-col justify-between p-5;
   }
 }
 
