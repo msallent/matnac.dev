@@ -2,13 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .section {
-    @apply flex h-svh flex-col justify-between p-5 sm:p-8;
-  }
-}
-
 :root {
   --color-primary: 229 229 217;
   --color-background: 28 28 28;
+}
+
+@layer components {
+  .section {
+    @apply flex h-svh flex-col justify-between p-5;
+  }
+}
+
+@media (width >= 640px) {
+  .text-xs {
+    font-size: 0.75rem;
+  }
+
+  .text-sm {
+    font-size: 0.8125rem;
+  }
+
+  .text-base {
+    font-size: 0.9375rem;
+  }
+
+  .text-lg {
+    font-size: 2.25rem;
+  }
+
+  .text-2xl {
+    font-size: 4rem;
+  }
 }

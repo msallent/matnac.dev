@@ -35,7 +35,7 @@ export function Showcase() {
               height={334}
               quality={100}
               alt="Screenshot of Casa Yen's website"
-              className="-my-1.5 w-[268px]"
+              className="-my-1.5 w-[268px] sm:w-[310px]"
             />
           </a>
 

@@ -32,7 +32,7 @@ export function Hero() {
         </div>
       </div>
 
-      <Matnac role="img" aria-labelledby="title" />
+      <Matnac role="img" aria-labelledby="title" className="sm:mx-auto sm:w-[90%]" />
 
       <div className="flex flex-1 flex-col justify-end gap-4">
         <Plus aria-hidden className="mx-auto h-10 w-10" />

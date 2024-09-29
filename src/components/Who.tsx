@@ -38,7 +38,7 @@ export function Who() {
           </p>
 
           <p className="flex items-baseline justify-end gap-1 text-2xl">
-            <Pin aria-hidden className="h-auto w-7" /> Argentina
+            <Pin aria-hidden className="h-auto w-7 sm:w-8" /> Argentina
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@ export function Contact() {
             rel="noreferrer"
             aria-label="Matias' GitHub profile"
           >
-            <GitHub className="h-7 w-7" />
+            <GitHub className="h-7 w-7 sm:h-8 sm:w-8" />
           </a>
 
           <a
@@ -27,7 +27,7 @@ export function Contact() {
             rel="noreferrer"
             aria-label="Matias' LinkedIn profile"
           >
-            <LinkedIn className="h-7 w-7" />
+            <LinkedIn className="h-7 w-7 sm:h-8 sm:w-8" />
           </a>
         </span>
       </div>
@@ -46,12 +46,12 @@ export function Contact() {
           </div>
         </div>
 
-        <span className="text-xl">
+        <span className="text-xl sm:text-2xl">
           <p>matias</p>
           <p>@matnac.dev</p>
         </span>
 
-        <p className="mt-[1.125rem] text-center font-secondary text-xs">
+        <p className="mt-[1.125rem] text-center font-secondary text-xs sm:text-left">
           Matnac LLC, 8 the Green STE B, Dover, DE 19901
         </p>
       </div>
