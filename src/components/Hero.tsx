@@ -20,7 +20,7 @@ export function Hero() {
           </span>
 
           <div className="flex flex-1 justify-end">
-            <div className="h-[5px] w-[5px] rounded-full bg-primary" />
+            <div className="h-[5px] w-[5px] rounded-full bg-primary sm:h-1.5 sm:w-1.5" />
           </div>
         </div>
 

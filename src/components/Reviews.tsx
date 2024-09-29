@@ -55,7 +55,7 @@ export function Reviews() {
         <Carousel>
           {REVIEWS.map((review, index) => (
             <CarouselItem key={index}>
-              <div className="flex h-60 flex-col justify-between gap-0.5">
+              <div className="flex h-60 flex-col justify-between gap-0.5 md:h-64">
                 <p>{review.date}</p>
 
                 <span className="flex flex-col gap-2">
