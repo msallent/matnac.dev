@@ -51,9 +51,9 @@ export function Contact() {
           <p>@matnac.dev</p>
         </span>
 
-        <p className="mt-[1.125rem] text-center font-secondary text-xs sm:text-left">
-          Matnac LLC, 8 the Green STE B, Dover, DE 19901
-        </p>
+        <footer className="mt-[1.125rem] text-center sm:text-left">
+          <p className="font-secondary text-xs">Matnac LLC, 8 the Green STE B, Dover, DE 19901</p>
+        </footer>
       </div>
     </section>
   );
