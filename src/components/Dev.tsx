@@ -2,7 +2,7 @@ const SKILLS = ["React", "TypeScript", "Next.js", "Node.js", "Tailwind"];
 
 export function Dev() {
   return (
-    <section className="section">
+    <section id="dev" className="section">
       <p className="text-right font-secondary text-sm">matias@matnac.dev</p>
 
       <p className="text-right font-secondary text-sm text-secondary">Languages / Skills</p>

@@ -2,7 +2,7 @@ import { Arrow, GitHub, LinkedIn } from "@/icons";
 
 export function Contact() {
   return (
-    <section className="section">
+    <section id="contact" className="section">
       <h1 className="flex justify-end text-secondary">
         <span className="mt-[2.5px] text-lg">(05)</span>
         <span className="text-2xl">Contact</span>

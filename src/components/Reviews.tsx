@@ -40,7 +40,7 @@ const REVIEWS = [
 
 export function Reviews() {
   return (
-    <section className="section">
+    <section id="reviews" className="section">
       <h1 className="flex justify-end">
         <span className="mt-[2.5px] text-lg">(04)</span>
         <span className="text-2xl">Reviews</span>
