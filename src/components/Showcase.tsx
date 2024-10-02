@@ -22,7 +22,7 @@ export function Showcase() {
 
       <div className="flex flex-col items-center pt-11 xl:pt-12">
         <h1 className="flex flex-col items-center gap-1 xl:relative xl:-ml-[3.25rem] xl:flex-row xl:items-start">
-          <span className="relative w-fit">
+          <span className="relative w-fit xl:mt-1">
             <p className="text-lg">(03)</p>
             <Stars aria-hidden className="absolute bottom-1/2 right-[-70%] w-12 xl:hidden" />
           </span>

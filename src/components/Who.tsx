@@ -36,7 +36,7 @@ export function Who() {
 
         <div className="flex flex-col gap-2">
           <p className="flex items-center justify-end gap-1 font-secondary text-sm text-secondary">
-            Buenos Aires, 7:34 (GMT-3) <Clock aria-hidden className="mt-px h-3 w-3" />
+            <Clock aria-hidden className="h-3 w-3" /> Buenos Aires, 7:34 (GMT-3)
           </p>
 
           <p className="flex items-baseline justify-end gap-1 text-2xl">
