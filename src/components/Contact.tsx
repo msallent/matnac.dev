@@ -39,7 +39,7 @@ export function Contact() {
 
       <div className="flex flex-col gap-0.5">
         <div className="flex justify-between">
-          <Arrow className="ml-0.5 h-9 w-9 xl:ml-1.5 xl:h-16 xl:w-16" />
+          <Arrow className="ml-0.5 h-9 w-9 xl:ml-1.5 xl:h-[4.5rem] xl:w-[4.5rem]" />
 
           <div className="flex gap-8 font-secondary text-xs">
             <span>
