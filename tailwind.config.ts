@@ -16,6 +16,10 @@ const config: Config = {
         primary: "var(--font-instrument-sans)",
         secondary: "var(--font-space-grotesk)",
       },
+      screens: {
+        "2xl": "1440px",
+        "3xl": "1536px",
+      },
     },
     fontSize: {
       xs: ["0.625rem", { letterSpacing: "0.03em", lineHeight: "1" }],
@@ -24,8 +28,6 @@ const config: Config = {
       lg: ["1.875rem", { letterSpacing: "-0.05em", lineHeight: "0.8", fontWeight: "500" }],
       xl: ["3rem", { letterSpacing: "-0.05em", lineHeight: "0.8" }],
       "2xl": ["3.5rem", { letterSpacing: "-0.05em", lineHeight: "0.8" }],
-      // "2xl": ["3.75rem", { letterSpacing: "-0.05em", lineHeight: "0.8" }],
-      // "3xl": ["8.75rem", { letterSpacing: "-0.05em", lineHeight: "0.8" }],
     },
   },
   plugins: [],

@@ -59,6 +59,10 @@
 }
 
 @media (width >= 1280px) {
+  .xl\:text-xs {
+    font-size: 0.75rem !important;
+  }
+
   .text-sm,
   .xl\:text-sm {
     font-size: 0.875rem !important;
@@ -75,5 +79,16 @@
   .text-2xl,
   .sm\:text-2xl {
     font-size: 6rem !important;
+  }
+}
+
+@media (width >= 1440px) {
+  .text-lg {
+    font-size: 3.75rem;
+  }
+
+  .text-2xl,
+  .sm\:text-2xl {
+    font-size: 7.5rem !important;
   }
 }
