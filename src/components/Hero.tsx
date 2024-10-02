@@ -2,7 +2,7 @@ import { Matnac, Plus } from "@/icons";
 
 export function Hero() {
   return (
-    <section className="section">
+    <section id="hero" className="section">
       <div className="flex flex-1 flex-col gap-10 font-secondary text-xs">
         <div className="flex justify-between">
           <div className="flex flex-1 gap-8">
@@ -20,7 +20,7 @@ export function Hero() {
           </span>
 
           <div className="flex flex-1 justify-end">
-            <div className="h-[5px] w-[5px] rounded-full bg-primary sm:h-1.5 sm:w-1.5" />
+            <div className="h-[5px] w-[5px] rounded-full bg-primary sm:h-1.5 sm:w-1.5 xl:h-2 xl:w-2" />
           </div>
         </div>
 
@@ -32,11 +32,20 @@ export function Hero() {
         </div>
       </div>
 
-      <Matnac
-        role="img"
-        aria-labelledby="title"
-        className="mx-auto w-full max-w-[30rem] md:max-w-[35rem]"
-      />
+      <div className="flex items-center justify-between font-secondary text-xs">
+        <p className="hidden xl:block">==</p>
+
+        <Matnac
+          role="img"
+          aria-labelledby="title"
+          className="mx-auto w-full max-w-[30rem] md:max-w-[35rem] xl:max-w-[40rem]"
+        />
+
+        <span className="hidden xl:block">
+          <p>=</p>
+          <p className="normal-case">0xF9DC</p>
+        </span>
+      </div>
 
       <div className="flex flex-1 flex-col justify-end gap-4">
         <Plus aria-hidden className="mx-auto h-10 w-10" />

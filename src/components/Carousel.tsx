@@ -64,7 +64,7 @@ export function CarouselItem({ children }: CarouselItemProps) {
     <div
       role="group"
       aria-roledescription="slide"
-      className="min-w-0 shrink-0 grow-0 basis-full border-r border-secondary px-4 md:basis-1/2"
+      className="min-w-0 shrink-0 grow-0 basis-full border-r border-secondary px-4 md:basis-1/2 xl:basis-1/3"
     >
       {children}
     </div>

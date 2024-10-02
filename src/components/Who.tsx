@@ -1,10 +1,12 @@
 import { Clock, Pin } from "@/icons";
+import { Sections } from "./Sections";
 
 export function Who() {
   return (
     <section id="who" className="section">
       <div className="flex flex-1 justify-between">
-        <p className="font-secondary text-xs">00101</p>
+        <p className="font-secondary text-xs xl:hidden">00101</p>
+        <Sections current="who" />
 
         <h1 className="flex justify-end text-secondary">
           <span className="mt-[2.5px] text-lg">(01)</span>
@@ -38,7 +40,7 @@ export function Who() {
           </p>
 
           <p className="flex items-baseline justify-end gap-1 text-2xl">
-            <Pin aria-hidden className="h-auto w-7 sm:w-8" /> Argentina
+            <Pin aria-hidden className="h-auto w-7 sm:w-8 xl:w-11" /> Argentina
           </p>
         </div>
       </div>

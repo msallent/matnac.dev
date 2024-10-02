@@ -1,4 +1,5 @@
 import { Carousel, CarouselItem } from "./Carousel";
+import { Sections } from "./Sections";
 
 const REVIEWS = [
   {
@@ -41,10 +42,14 @@ const REVIEWS = [
 export function Reviews() {
   return (
     <section id="reviews" className="section">
-      <h1 className="flex justify-end">
-        <span className="mt-[2.5px] text-lg">(04)</span>
-        <span className="text-2xl">Reviews</span>
-      </h1>
+      <div className="xl:flex xl:justify-between">
+        <Sections current="reviews" />
+
+        <h1 className="flex justify-end">
+          <span className="mt-[2.5px] text-lg">(04)</span>
+          <span className="text-2xl">Reviews</span>
+        </h1>
+      </div>
 
       <div className="flex flex-col font-secondary text-sm">
         <span className="mb-4 border-b border-secondary pb-4">
