@@ -24,6 +24,7 @@
   }
 }
 
+/* screen(sm) */
 @media (width >= 640px) {
   .text-xs {
     font-size: 0.75rem;
@@ -43,10 +44,11 @@
 
   .text-2xl,
   .sm\:text-2xl {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
   }
 }
 
+/* screen(md) */
 @media (width >= 768px) {
   .text-lg {
     font-size: 2.5rem;
@@ -54,22 +56,30 @@
 
   .text-2xl,
   .sm\:text-2xl {
-    font-size: 4.25rem !important;
+    font-size: 4.75rem !important;
   }
 }
 
-@media (width >= 1280px) {
-  .xl\:text-xs {
+/* screen(lg) */
+@media (width >= 1024px) {
+  .lg\:text-xs {
     font-size: 0.75rem !important;
   }
 
   .text-sm,
-  .xl\:text-sm {
+  .lg\:text-sm {
     font-size: 0.875rem !important;
   }
 
   .text-base {
     font-size: 1rem;
+  }
+}
+
+/* screen(xl) */
+@media (width >= 1280px) {
+  .xl\:text-sm {
+    font-size: 0.875rem !important;
   }
 
   .text-lg {
@@ -82,7 +92,8 @@
   }
 }
 
-@media (width >= 1440px) {
+/* screen(2xl) */
+@media (width >= 1536px) {
   .text-lg {
     font-size: 3.75rem;
   }

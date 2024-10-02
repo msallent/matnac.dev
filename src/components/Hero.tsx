@@ -38,7 +38,7 @@ export function Hero() {
         <Matnac
           role="img"
           aria-labelledby="title"
-          className="mx-auto w-full max-w-[30rem] md:max-w-[35rem] xl:max-w-[40rem]"
+          className="mx-auto w-full max-w-[30rem] sm:max-w-[32.5rem] md:max-w-[37.5rem] lg:max-w-[40rem] xl:max-w-[42.5rem] 2xl:max-w-[50rem]"
         />
 
         <span className="hidden xl:block">

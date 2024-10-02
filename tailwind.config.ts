@@ -16,10 +16,6 @@ const config: Config = {
         primary: "var(--font-instrument-sans)",
         secondary: "var(--font-space-grotesk)",
       },
-      screens: {
-        "2xl": "1440px",
-        "3xl": "1536px",
-      },
     },
     fontSize: {
       xs: ["0.625rem", { letterSpacing: "0.03em", lineHeight: "1" }],

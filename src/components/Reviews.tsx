@@ -42,7 +42,7 @@ const REVIEWS = [
 export function Reviews() {
   return (
     <section id="reviews" className="section">
-      <div className="xl:flex xl:justify-between">
+      <div className="lg:flex lg:justify-between">
         <Sections current="reviews" />
 
         <h1 className="flex justify-end">

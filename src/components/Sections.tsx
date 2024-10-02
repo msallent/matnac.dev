@@ -8,7 +8,7 @@ type SectionsProps = {
 
 export function Sections({ current }: SectionsProps) {
   return (
-    <nav className="hidden xl:block">
+    <nav className="hidden lg:block">
       <ol className="font-secondary text-sm">
         {SECTIONS.map((section, index) => (
           <li key={index} className={clsx("flex gap-2", { "font-bold": section === current })}>
