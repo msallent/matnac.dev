@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        grain: "url('/bg-grain.png')",
+        grain: "url('/bg-grain.webp')",
       },
       colors: {
         primary: "rgb(var(--color-primary))",
