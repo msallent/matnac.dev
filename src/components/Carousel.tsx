@@ -43,12 +43,12 @@ export function Carousel({ children }: CarouselProps) {
       </div>
 
       <div className="mt-4 flex justify-end gap-4 border-t border-secondary pt-4 text-base">
-        <button onClick={scrollPrev} className="uppercase disabled:text-secondary">
-          &lt; Previous
+        <button onClick={scrollPrev} className="group uppercase disabled:text-secondary">
+          &lt; <span className="group-hover:underline">Previous</span>
         </button>
 
-        <button onClick={scrollNext} className="uppercase disabled:text-secondary">
-          Next &gt;
+        <button onClick={scrollNext} className="group uppercase disabled:text-secondary">
+          <span className="group-hover:underline">Next</span> &gt;
         </button>
       </div>
     </div>
@@ -64,7 +64,7 @@ export function CarouselItem({ children }: CarouselItemProps) {
     <div
       role="group"
       aria-roledescription="slide"
-      className="min-w-0 shrink-0 grow-0 basis-full border-r border-secondary px-4 md:basis-1/2 xl:basis-1/3 2xl:basis-1/4"
+      className="min-w-0 shrink-0 grow-0 basis-full border-r border-secondary px-4 hover:cursor-grab active:cursor-grabbing md:basis-1/2 xl:basis-1/3 2xl:basis-1/4"
     >
       {children}
     </div>

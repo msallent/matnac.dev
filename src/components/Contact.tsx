@@ -52,10 +52,10 @@ export function Contact() {
         </div>
 
         <div className="lg:flex lg:items-end lg:justify-between">
-          <span className="text-xl sm:text-2xl">
-            <p>matias</p>
-            <p>@matnac.dev</p>
-          </span>
+          <a href="mailto:matias@matnac.dev" className="group text-xl sm:text-2xl">
+            <p className="decoration-2 group-hover:underline">matias</p>
+            <p className="decoration-2 group-hover:underline">@matnac.dev</p>
+          </a>
 
           <span className="hidden lg:flex lg:gap-4">
             <a
@@ -64,7 +64,7 @@ export function Contact() {
               rel="noreferrer"
               aria-label="Matias' GitHub profile"
             >
-              <GitHub className="lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-14 2xl:w-14" />
+              <GitHub className="transition-transform hover:scale-105 active:scale-95 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-14 2xl:w-14" />
             </a>
 
             <a
@@ -73,7 +73,7 @@ export function Contact() {
               rel="noreferrer"
               aria-label="Matias' LinkedIn profile"
             >
-              <LinkedIn className="lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-14 2xl:w-14" />
+              <LinkedIn className="transition-transform hover:scale-105 active:scale-95 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-14 2xl:w-14" />
             </a>
           </span>
         </div>
