@@ -2,11 +2,11 @@ import { clsx } from "clsx";
 
 const SECTIONS = ["who", "dev", "showcase", "reviews", "contact"] as const;
 
-type SectionsProps = {
+type NavbarProps = {
   current: (typeof SECTIONS)[number];
 };
 
-export function Sections({ current }: SectionsProps) {
+export function Navbar({ current }: NavbarProps) {
   return (
     <nav className="hidden lg:block">
       <ol className="font-secondary text-sm">

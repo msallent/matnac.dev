@@ -1,12 +1,12 @@
+import { Navbar } from "@/components";
 import { Clock, Pin } from "@/icons";
-import { Sections } from "./Sections";
 
 export function Who() {
   return (
     <section id="who" className="section">
       <div className="flex flex-1 justify-between">
         <p className="font-secondary text-xs lg:hidden">00101</p>
-        <Sections current="who" />
+        <Navbar current="who" />
 
         <h1 className="flex justify-end text-secondary">
           <span className="mt-[2.5px] text-lg">(01)</span>

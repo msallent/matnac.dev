@@ -1,11 +1,11 @@
+import { Navbar } from "@/components";
 import { Arrow, GitHub, LinkedIn } from "@/icons";
-import { Sections } from "./Sections";
 
 export function Contact() {
   return (
     <section id="contact" className="section">
       <div className="lg:flex lg:justify-between">
-        <Sections current="contact" />
+        <Navbar current="contact" />
 
         <h1 className="flex justify-end text-secondary">
           <span className="mt-[2.5px] text-lg">(05)</span>

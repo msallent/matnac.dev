@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { Navbar } from "@/components";
 import { Arrow, Stars } from "@/icons";
 import yenHome from "@/images/yen-home.png";
-import { Sections } from "./Sections";
 
 export function Showcase() {
   return (
@@ -16,7 +16,7 @@ export function Showcase() {
           <p>&gt;&gt;</p>
         </div>
 
-        <Sections current="showcase" />
+        <Navbar current="showcase" />
 
         <p className="text-right font-secondary text-sm">matias@matnac.dev</p>
       </div>

@@ -1,5 +1,4 @@
-import { Carousel, CarouselItem } from "./Carousel";
-import { Sections } from "./Sections";
+import { Carousel, CarouselItem, Navbar } from "@/components";
 
 const REVIEWS = [
   {
@@ -43,7 +42,7 @@ export function Reviews() {
   return (
     <section id="reviews" className="section">
       <div className="lg:flex lg:justify-between">
-        <Sections current="reviews" />
+        <Navbar current="reviews" />
 
         <h1 className="flex justify-end">
           <span className="mt-[2.5px] text-lg">(04)</span>

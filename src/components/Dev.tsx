@@ -1,4 +1,4 @@
-import { Sections } from "./Sections";
+import { Navbar } from "@/components";
 
 const SKILLS = [
   { name: "React", area: "Frontend", experience: 6 },
@@ -13,7 +13,7 @@ export function Dev() {
     <section id="dev" className="section [container-type:size]">
       <div className="lg:flex lg:justify-between">
         <div className="hidden lg:max-xl:[@container(min-height:660px)]:block xl:max-2xl:[@container(min-height:770px)]:block 2xl:[@container(min-height:905px)]:block">
-          <Sections current="dev" />
+          <Navbar current="dev" />
         </div>
 
         <p className="ml-auto text-right font-secondary text-sm">matias@matnac.dev</p>
