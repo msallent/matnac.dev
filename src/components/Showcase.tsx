@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Arrow, Stars } from "@/icons";
+import yenHome from "@/images/yen-home.png";
 import { Sections } from "./Sections";
 
 export function Showcase() {
@@ -38,12 +39,11 @@ export function Showcase() {
         <div className="relative">
           <a href="https://casayen.com" target="_blank" rel="noreferrer">
             <Image
-              src="/yen-home.png"
-              width={536}
-              height={334}
+              src={yenHome}
               quality={100}
               alt="Screenshot of Casa Yen's website"
               className="-my-1.5 w-[268px] sm:w-[310px] xl:-my-2.5 xl:w-[420px] 2xl:-my-3 2xl:w-[480px]"
+              placeholder="blur"
             />
           </a>
 
