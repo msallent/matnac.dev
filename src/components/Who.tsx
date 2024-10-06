@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Navbar, Time } from "@/components";
 import { Clock, Pin } from "@/icons";
 
 export function Who() {
@@ -44,7 +44,7 @@ export function Who() {
               <Clock aria-hidden className="h-3 w-3 lg:mt-px" />
 
               <span className="flex gap-0.5 lg:flex-col lg:gap-0">
-                <span>Buenos Aires,</span> <span>7:34 (GMT-3)</span>
+                <span>Buenos Aires,</span> <Time />
               </span>
             </p>
 

@@ -5,4 +5,5 @@ export { Hero } from "./Hero";
 export { Reviews } from "./Reviews";
 export { Navbar } from "./Navbar";
 export { Showcase } from "./Showcase";
+export { Time } from "./Time";
 export { Who } from "./Who";
