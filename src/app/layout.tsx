@@ -42,7 +42,10 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={`${instrumentSans.variable} ${spaceGrotesk.variable}`}>
-      <body className="bg-grain bg-background bg-blend-hard-light">{children}</body>
+      <body className="bg-background">
+        {children}
+        <div className="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full bg-grain mix-blend-overlay" />
+      </body>
     </html>
   );
 }
