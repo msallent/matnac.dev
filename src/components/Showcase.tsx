@@ -49,7 +49,7 @@ export function Showcase() {
 
           <Arrow
             aria-hidden
-            className="absolute -right-4 top-1/2 w-9 -translate-y-1/2 sm:-right-5 sm:w-11 xl:-right-8 xl:w-14 2xl:-right-10 2xl:w-[4.5rem]"
+            className="absolute -right-4 top-1/2 w-9 -translate-y-1/2 sm:-right-8 sm:w-[3.25rem] md:w-14 xl:-right-10 xl:w-[4.5rem] 2xl:-right-12 2xl:w-[5.5rem]"
           />
         </div>
 
