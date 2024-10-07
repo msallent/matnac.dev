@@ -1,7 +1,9 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { motion } from "framer-motion";
+import clsx from "clsx";
 
 type CarouselProps = {
   children: React.ReactNode;
@@ -9,6 +11,9 @@ type CarouselProps = {
 
 export function Carousel({ children }: CarouselProps) {
   const [carouselRef, embla] = useEmblaCarousel({ loop: true, align: "start" });
+
+  const [isHoverPrev, setIsHoverPrev] = useState(false);
+  const [isHoverNext, setIsHoverNext] = useState(false);
 
   const scrollPrev = useCallback(() => {
     embla?.scrollPrev();
@@ -43,13 +48,41 @@ export function Carousel({ children }: CarouselProps) {
       </div>
 
       <div className="mt-4 flex justify-end gap-4 border-t border-secondary pt-4 text-base">
-        <button onClick={scrollPrev} className="group uppercase disabled:text-secondary">
-          &lt; <span className="group-hover:underline">Previous</span>
-        </button>
+        <motion.button
+          onClick={scrollPrev}
+          className="flex gap-0.5 overflow-hidden uppercase disabled:text-secondary"
+          onHoverStart={() => setIsHoverPrev(true)}
+          onHoverEnd={() => setIsHoverPrev(false)}
+        >
+          <span>&lt;</span>
+          <div className="flex flex-col gap-0.5">
+            <span>Previous</span>
+            <span
+              className={clsx(
+                "w-full rounded-xl border-t border-primary transition-transform duration-300 ease-in-out",
+                isHoverPrev ? "translate-x-0" : "translate-x-[101%]",
+              )}
+            />
+          </div>
+        </motion.button>
 
-        <button onClick={scrollNext} className="group uppercase disabled:text-secondary">
-          <span className="group-hover:underline">Next</span> &gt;
-        </button>
+        <motion.button
+          onClick={scrollNext}
+          className="flex gap-0.5 overflow-hidden uppercase disabled:text-secondary"
+          onHoverStart={() => setIsHoverNext(true)}
+          onHoverEnd={() => setIsHoverNext(false)}
+        >
+          <div className="flex flex-col gap-0.5">
+            <span>Next</span>
+            <span
+              className={clsx(
+                "w-full rounded-xl border-t border-primary transition-transform duration-300 ease-in-out",
+                isHoverNext ? "-translate-x-0" : "-translate-x-[101%]",
+              )}
+            />
+          </div>
+          <span>&gt;</span>
+        </motion.button>
       </div>
     </div>
   );
