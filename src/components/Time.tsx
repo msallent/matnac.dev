@@ -2,11 +2,15 @@
 
 import { useEffect, useState } from "react";
 
-export function Time() {
-  const [time, setTime] = useState(new Date());
+const createDate = () => {
+  return new Date(new Date().toLocaleString("en-US", { timeZone: "America/Buenos_Aires" }));
+};
 
-  const updateTime = (previous: Date) => {
-    const current = new Date();
+export function Time() {
+  const [date, setDate] = useState(createDate);
+
+  const updateDate = (previous: Date) => {
+    const current = createDate();
 
     if (current.getMinutes() !== previous.getMinutes()) {
       return current;
@@ -16,13 +20,13 @@ export function Time() {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => setTime(updateTime), 1000);
+    const interval = setInterval(() => setDate(updateDate), 1000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <span suppressHydrationWarning>
-      {`${time.getHours()}`.padStart(2, "0")}:{`${time.getMinutes()}`.padStart(2, "0")} (GMT-3)
+      {`${date.getHours()}`.padStart(2, "0")}:{`${date.getMinutes()}`.padStart(2, "0")} (GMT-3)
     </span>
   );
 }
