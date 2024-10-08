@@ -1,3 +1,5 @@
+"use client";
+
 import { Contact, Dev, Hero, Reviews, Showcase, Who } from "@/components";
 
 export default function Home() {

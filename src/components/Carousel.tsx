@@ -1,5 +1,3 @@
-"use client";
-
 import { useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
