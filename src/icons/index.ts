@@ -6,3 +6,4 @@ export { Matnac } from "./Matnac";
 export { Pin } from "./Pin";
 export { Plus } from "./Plus";
 export { Stars } from "./Stars";
+export { TracedM } from "./TracedM";

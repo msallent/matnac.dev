@@ -1,4 +1,4 @@
-import { Matnac, Plus } from "@/icons";
+import { Matnac, Plus, TracedM } from "@/icons";
 
 export function Hero() {
   return (
@@ -35,11 +35,17 @@ export function Hero() {
       <div className="flex items-center justify-between font-secondary text-xs">
         <p className="hidden xl:block">==</p>
 
-        <Matnac
-          role="img"
-          aria-labelledby="title"
-          className="mx-auto w-full max-w-[30rem] sm:max-w-[32.5rem] md:max-w-[37.5rem] lg:max-w-[40rem] xl:max-w-[42.5rem] 2xl:max-w-[50rem]"
-        />
+        <div className="relative flex w-full justify-center">
+          <Matnac
+            role="img"
+            aria-labelledby="title"
+            className="max-w-[30rem] sm:max-w-[32.5rem] md:max-w-[37.5rem] lg:max-w-[40rem] xl:max-w-[42.5rem] 2xl:max-w-[50rem]"
+          />
+          <TracedM
+            className="absolute max-h-14 sm:max-h-[5.4rem] md:max-h-[6.25rem] lg:max-h-[6.65rem] xl:max-h-[7.1rem] 2xl:max-h-[8.33rem]"
+            aria-hidden
+          />
+        </div>
 
         <span className="hidden xl:block">
           <p>=</p>
