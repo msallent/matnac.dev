@@ -1,9 +1,19 @@
+import { motion } from "framer-motion";
 import { Matnac, Plus, TracedM } from "@/icons";
+
+const defaultAnimation = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.5, ease: "easeInOut", delay: 2.7 },
+};
 
 export function Hero() {
   return (
     <section id="hero" className="section">
-      <div className="flex flex-1 flex-col gap-10 font-secondary text-xs">
+      <motion.div
+        className="flex flex-1 flex-col gap-10 font-secondary text-xs"
+        {...defaultAnimation}
+      >
         <div className="flex justify-between">
           <div className="flex flex-1 gap-8">
             <span>
@@ -30,10 +40,12 @@ export function Hero() {
             <p>{`//_`}</p>
           </span>
         </div>
-      </div>
+      </motion.div>
 
       <div className="flex items-center justify-between font-secondary text-xs">
-        <p className="hidden xl:block">==</p>
+        <motion.p className="hidden xl:block" {...defaultAnimation}>
+          ==
+        </motion.p>
 
         <div className="relative flex w-full justify-center">
           <Matnac
@@ -47,13 +59,13 @@ export function Hero() {
           />
         </div>
 
-        <span className="hidden xl:block">
+        <motion.span className="hidden xl:block" {...defaultAnimation}>
           <p>=</p>
           <p className="normal-case">0xF9DC</p>
-        </span>
+        </motion.span>
       </div>
 
-      <div className="flex flex-1 flex-col justify-end gap-4">
+      <motion.div className="flex flex-1 flex-col justify-end gap-4" {...defaultAnimation}>
         <Plus aria-hidden className="mx-auto h-10 w-10" />
 
         <div className="flex justify-between font-secondary text-sm">
@@ -72,7 +84,7 @@ export function Hero() {
             <p>Down</p>
           </span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
