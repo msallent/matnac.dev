@@ -13,5 +13,5 @@ export function Time() {
     return () => clearInterval(interval);
   }, []);
 
-  return <span>{date} (GMT-3)</span>;
+  return <span suppressHydrationWarning>{date} (GMT-3)</span>;
 }
