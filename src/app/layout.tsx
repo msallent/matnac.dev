@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Sans, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/globals.css";
 
 const instrumentSans = Instrument_Sans({
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className="bg-background">
         {children}
         <div className="pointer-events-none fixed left-0 top-0 -z-10 h-full w-full bg-grain mix-blend-overlay" />
+        <Analytics />
       </body>
     </html>
   );
