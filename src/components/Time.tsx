@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
 import { formatInTimeZone } from "date-fns-tz";
 
-const createDate = () => {
-  return formatInTimeZone(new Date(), "America/Buenos_Aires", "HH:mm");
-};
-
 export function Time() {
-  const [date, setDate] = useState(createDate);
+  const [date, setDate] = useState<string>();
+
+  const createDate = () => {
+    return formatInTimeZone(new Date(), "America/Buenos_Aires", "HH:mm");
+  };
 
   useEffect(() => {
-    createDate();
-
     const interval = setInterval(() => setDate(createDate), 1000);
     return () => clearInterval(interval);
   }, []);
 
-  return <span suppressHydrationWarning>{date} (GMT-3)</span>;
+  return <span suppressHydrationWarning>{date || "--:--"} (GMT-3)</span>;
 }
