@@ -9,6 +9,8 @@ export function Time() {
   const [date, setDate] = useState(createDate);
 
   useEffect(() => {
+    createDate();
+
     const interval = setInterval(() => setDate(createDate), 1000);
     return () => clearInterval(interval);
   }, []);
