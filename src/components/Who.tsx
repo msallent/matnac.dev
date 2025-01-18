@@ -16,7 +16,7 @@ export function Who() {
 
       <span className="flex flex-col text-2xl">
         <p>Matias Sallent</p>
-        <p className="text-right">(Tech Lead Engineer)</p>
+        <p className="text-right">(Engineer Manager)</p>
       </span>
 
       <div className="flex flex-1 flex-col justify-end gap-8 sm:gap-10 lg:gap-16">
