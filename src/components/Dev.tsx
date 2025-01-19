@@ -5,7 +5,7 @@ const SKILLS = [
   { name: "TypeScript", area: "Fullstack", experience: 5 },
   { name: "Next.js", area: "Fullstack", experience: 4 },
   { name: "Node.js", area: "Backend", experience: 4 },
-  { name: "Tailwind", area: "Frontend", experience: 3 },
+  { name: "Terraform", area: "DevOps", experience: 2 },
 ];
 
 export function Dev() {
